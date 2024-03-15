@@ -9,6 +9,8 @@ do
 		-u) param="$2"
 			echo "-u (uid) option, parameter value : $param"
 			shift ;;
+		param1="$3"
+			echo "$param1 test"
 		-g) param="$2"
 			echo "-g (gid) option, parameter value : $param"
 			shift ;;
