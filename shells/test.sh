@@ -1,17 +1,18 @@
 #!/bin/bash
 #
-set -- $(getopt -q u::g:c:d:s:k:m "$@")
+set -- $(getopt -q u:g:c:d:s:k:m "$@")
 #
 echo
 while [ -n "$1" ]
 do
 	case "$1" in
-		-u) param="$2"
+		-u) param="$3"
 			echo "-u (uid) option, parameter value : $param"
 			shift ;;
 		-g) param="$2"
 			echo "-g (gid) option, parameter value : $param"
-			shift ;;
+			shift 
+			;;
 		-c) param="$2"
 			echo "-c (comment) option, parameter value : $param"
 			shift ;;
