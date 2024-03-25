@@ -1,13 +1,10 @@
 profile: /etc/profile
 	source $^
-	source ~/.source
+	source ~/.bashrc
 start:
 	lsnrctl start
-	sleep 3
-	netstat -ntlp
 stop:
 	lsnrctl stop
-	sleep 3
-	netstat -ntlp
 status:
 	lsnrctl status
+	netstat -ntlp
