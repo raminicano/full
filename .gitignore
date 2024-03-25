@@ -28,3 +28,9 @@ maven/**/target
 node/**/node_modules
 node/**/package-lock.json
 
+## .venv
+python/**/.venv
+
+## pycahe
+
+python/fastapi/__pycache__
