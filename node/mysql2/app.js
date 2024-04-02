@@ -50,10 +50,10 @@ var db = async () => {
         console.log(rows);
 
     } catch (error) {
-        console.log(error);
+        console.log(error)
     }
 
-};
+}
 
 db();
 
