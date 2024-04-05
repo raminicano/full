@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>now hours</title>
+</head>
+
+<body>
+    <script>
+        let now = new Date();
+        let oldTime = new Date(2022, 8, 1, 9, 0, 0);
+        let com = now - oldTime;
+        let sec = parseInt(com / 1000);
+        let min = parseInt(sec / 60);
+        let hour = parseInt(min / 60);
+        let day = parseInt(min / 24);
+
+        document.write("<br> day " + day);
+        document.write("<br> hour " + hour);
+        document.write("<br> min " + min);
+        document.write("<br> sec " + sec);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>quiz3</title>
+</head>
+
+<body>
+    <script>
+
+        let n = prompt("1~10 사이의 숫자를 입력하세요");
+        document.write("배열의 길이 : " + n + "<br>");
+        let array = new Array(n);
+        let stop_num = 0;
+        document.write("배열의 값 : ");
+        let sum = 0
+        for (let i = 0; i < n; i++) {
+            array[i] = Math.floor(Math.random() * 10 + 1);
+            sum += array[i]
+            document.write(array[i] + "&nbsp;");
+
+        }
+        let temp = 0;
+        for (let i = 0; i < n; i++) {
+            temp += array[i]
+            if (temp > (3 * n)) {
+                stop_num = i
+                break
+            }
+        }
+        document.write("<br>");
+        document.write("종료 시점의 인덱스 : array[" + stop_num + "] &nbsp;");
+        document.write("<br>");
+        document.write("배열의 합 : ");
+        document.write(sum + "&nbsp;");
+
+    </script>
+
+</body>
+
+</html>
