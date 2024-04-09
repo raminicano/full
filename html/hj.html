@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Claendar</title>
+</head>
+
+<body>
+    <h3>Claendar</h3>
+    <hr>
+    <script>
+        // 일주일 
+        document.write("<h4>Sun Mon Tue Wed Thu Fri Sat </h4>");
+
+        // 해당 달의 시작 요일 구하는 방법
+        let want = prompt("원하는 연도와 달을 입력하시오.");
+        let want_D = want.substr(0, 4) + "-" + want.substr(4, 2);
+
+        var startDay = new Date(want_D).getDay();
+        let year = want.substr(0, 4);
+        let month = want.substr(4, 2);
+        var endDay = new Date(year, month, 0).getDate();
+        let num = 1;
+        if ((startDay + num) < 7) {
+            for (let index = 0; index <= startDay; index++) {
+                document.write("&nbsp;&nbsp;&nbsp;");
+            }
+        }
+        for (num; num <= endDay; num++) {
+
+            if ((num + startDay - 1) % 7 == 0) {
+                document.write("<br>");
+            }
+            if (num < 10) {
+                document.write("&nbsp;&nbsp;" + num + "&nbsp;&nbsp;");
+            }
+            else {
+                document.write(num + "&nbsp;&nbsp;&nbsp;");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+    <script>
+        let isNum = 0;
+        let result = 1;
+        function checkPalindrome() {
+            let test = document.querySelector('input[type=text][id=input]').value;
+            let is_num = document.querySelector('input[type=radio][name=ta]:checked').value;
+            var num_ri = 0;
+            var num_le = 1;
+            var char_ri = "";
+            var char_le = "  ";
+            if (is_num == "1") {
+                char_ri = test[2]
+                char_le = test[0]
+            } else {
+                test = parseInt(test);
+                num_ri = parseInt(test / 100);
+                num_le = parseInt(test % 10);
+            }
+            if (num_ri == num_le | char_ri == char_le) {
+                document.getElementById("output").innerHTML = "입력하신 숫자/문자는 Palindrome입니다.";
+            } else {
+                document.getElementById("output").innerHTML = "입력하신 숫자/문자는 Palindrome이 아닙니다.";
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h3> Palindrome </h3>
+    <hr />
+    <form>
+        <input type="text" id="input" placeholder="숫자/문자 3글자" />
+        <input type="button" value="Check Palindrome" onclick="checkPalindrome()" />
+        <p>
+            <input type="radio" name="ta" value="0" checked /> 숫자
+            <input type="radio" name="ta" value="1" /> 문자
+        </p>
+    </form>
+    <div style="margin: 10px;">
+        <span id="output">3자리 문자 또는 숫자를 입력하세요.</span>
+    </div>
+</body>
+
+</html>
