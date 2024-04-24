@@ -41,3 +41,7 @@ oracle/node/dbConfig.js
 oracle/node/node_modules
 oracle/node/package-lock.json
 oracle/myterror.csv
+
+
+# key
+python/data/secret.json
