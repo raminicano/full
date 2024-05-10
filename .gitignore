@@ -45,3 +45,7 @@ oracle/myterror.csv
 
 # key
 python/data/secret.json
+python/secret.json
+
+# c9
+.c9
