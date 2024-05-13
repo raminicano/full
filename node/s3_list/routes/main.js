@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 const AWS = require('aws-sdk');
 const ID = process.env.ID;
 const SECRET = process.env.SECRET;
-const BUCKET_NAME = 'kibwa05';
+const BUCKET_NAME = 'kibwa00';
 const MYREGION = 'ap-northeast-2';
 const s3 = new AWS.S3({ accessKeyId: ID, secretAccessKey: SECRET, region: MYREGION });
 
