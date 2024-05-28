@@ -1,7 +1,21 @@
 {
     "resultCode": 200,
     "data": {
-      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-      "translate" : "트랜스포머의 양방향 인코더 표현을 나타내는 BERT라는 새로운 언어 표현 모델을 소개합니다. 최근 언어와 달리..."
-    }
+        "Get": {
+          "Article": [
+            {
+              "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+              "_additional": {
+                "score": 0.98
+              }
+            },
+            {
+              "title": "This is a sample article about AI and machine learning.",
+              "_additional": {
+                "score": 0.85
+              }
+            }
+          ]
+        }
+      }
 }
