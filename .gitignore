@@ -52,3 +52,6 @@ python/secret.json
 
 # swagger
 node/swagger
+
+/**/**/node_modules
+/**/**/package-lock.json
