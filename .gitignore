@@ -58,3 +58,8 @@ node/swagger
 
 ## .venv
 /**/.venv
+ai-1/1_openai/2_image/image.png
+ai-1/1_openai/2_image/mask.png
+ai-1/1_openai/4_fine_tuning/tsukuyomi_new.jsonl
+ai-1/1_openai/4_fine_tuning/tsukuyomi.jsonl
+ai-1/1_openai/4_fine_tuning/tsukuyomi.csv
