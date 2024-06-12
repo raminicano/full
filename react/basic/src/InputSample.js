@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 
 function InputSample() {
@@ -7,6 +7,7 @@ function InputSample() {
         nickname: ''
     });
 
+    const nameInput = useRef();
     const { name, nickname } = inputs;
 
     const onChange = (e) => {
@@ -21,14 +22,15 @@ function InputSample() {
             name: '',
             nickname: '',
         });
+        nameInput.current.focus();
     };
     return (
         <div>
-            <inputs name="name" onChange={onChange} value={name} placeholder="이름" />
-            <inputs name="nickname" onChange={onChange} value={nickname} placeholder="닉네임" />
+            <input name="name" onChange={onChange} value={name} placeholder="이름" ref={nameInput} />
+            <input name="nickname" onChange={onChange} value={nickname} placeholder="닉네임" />
             <button onClick={onReset}>초기화</button>
             <div>
-                <b>값: </b>
+                <b>값:</b>
                 {name} ({nickname})
             </div>
         </div>
