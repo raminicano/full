@@ -67,3 +67,5 @@ ai-1/1_openai/4_fine_tuning/tsukuyomi.csv
 
 # json
 ai-1/1_openai/test/VL_01. KAKAO
+
+ai-1/1_openai/test/output/*
