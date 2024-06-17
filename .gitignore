@@ -70,3 +70,4 @@ ai-1/1_openai/test/VL_01. KAKAO
 
 ai-1/1_openai/test/output/*
 ai-1/2_llamaindex/data/*
+ai-1/3_langchain/akazukin_all.txt
