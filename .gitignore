@@ -73,4 +73,5 @@ ai-1/2_llamaindex/data/*
 ai-1/3_langchain/akazukin_all.txt
 
 # data
-ai-2/6_youtube/data/*
+ai-2/*/data/*
+
